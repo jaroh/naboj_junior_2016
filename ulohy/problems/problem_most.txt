@@ -1,0 +1,19 @@
+﻿% Neodmazavejte ty % jinak vam Donald ruce ukousne!!!
+%
+% Bylo by super, když se úloha zásadně přejmenuje, tak přejmenovat
+% i její soubor a opravit to v problem-sort.tex
+%
+\uloha{\opt{lngcs}{Kolínský most}\opt{lngsk}{}}% název s malým písmenem (velké u vl. jmen)
+{\opt{lngcs}{% Nový zdvihací most v Kolíně váží rovných $"150 t"$ a má $"10 m"$.
+Zvednutí mostu z vodorovné do svislé polohy trvá 3 a půl minuty. Lukáš během této
+doby hravě spočítal průměrný výkon zdvihacího zařízení. Spočítejte ho také.
+}%
+\opt{lngsk}{% zadanie SK
+}}%
+{}% výsledek ve všech možných formách včetně veličiny
+{}% autor vzoráku~--~typicky prijmeni (jinak o tom vis), vsechna mala
+{\opt{lngcs}{% řešení CZ
+}%
+\opt{lngsk}{% riešenie SK
+}}%
+{\opt{lngcs}{}\opt{lngsk}{}}% pôvod úlohy
