@@ -1,0 +1,20 @@
+﻿% Neodmazavejte ty % jinak vam Donald ruce ukousne!!!
+%
+% Bylo by super, když se úloha zásadně přejmenuje, tak přejmenovat
+% i její soubor a opravit to v problem-sort.tex
+%
+\uloha{\opt{lngcs}{mokrá tyč}\opt{lngsk}{}}% název s malým písmenem (velké u vl. jmen)
+{\opt{lngcs}{% 
+Jaroslav našel doma na půdě metrovou dřevěnou tyč s husotou $"750 kgm^{-3}"$,
+kterou na jednom konci uchytil přes otočný kloub ke stropu. Pod ní dal
+nádobu s vodou, tak jak je znázorněno na obrázku. Jaká část tyče je pod vodou?
+}%
+\opt{lngsk}{% zadanie SK
+}}%
+{}% výsledek ve všech možných formách včetně veličiny
+{}% autor vzoráku~--~typicky prijmeni (jinak o tom vis), vsechna mala
+{\opt{lngcs}{% řešení CZ
+}%
+\opt{lngsk}{% riešenie SK
+}}%
+{\opt{lngcs}{}\opt{lngsk}{}}% pôvod úlohy
