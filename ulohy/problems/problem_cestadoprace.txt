@@ -1,0 +1,20 @@
+﻿% Neodmazavejte ty % jinak vam Donald ruce ukousne!!!
+%
+% Bylo by super, když se úloha zásadně přejmenuje, tak přejmenovat
+% i její soubor a opravit to v problem-sort.tex
+%
+\uloha{\opt{lngcs}{cesta do práce}\opt{lngsk}{}}% název s malým písmenem (velké u vl. jmen)
+{\opt{lngcs}{% 
+Patrik jezdí každé ráno do práce autem. V následujících grafech můžete vidět
+závislost jeho rychlosti na čase a dráhy na čase. Určete průměrmou rychlost
+Patrika při cestě do práce.
+}%
+\opt{lngsk}{% zadanie SK
+}}%
+{}% výsledek ve všech možných formách včetně veličiny
+{}% autor vzoráku~--~typicky prijmeni (jinak o tom vis), vsechna mala
+{\opt{lngcs}{% řešení CZ
+}%
+\opt{lngsk}{% riešenie SK
+}}%
+{\opt{lngcs}{}\opt{lngsk}{}}% pôvod úlohy
