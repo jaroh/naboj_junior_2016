@@ -1,0 +1,88 @@
+\expandafter\ifx\csname classoptions\endcsname\relax
+  \def\classoptions{}
+\fi
+\documentclass[vyfuk,\classoptions]{fksgeneric}
+
+\usepackage[fyziklani2]{fkslegacyloader}
+\usepackage{multicol}
+
+\input{common.tex}
+
+\begin{document}
+
+%%%%%%%%%%% TITULNI STRANA %%%%%%%%%%%
+
+\thispagestyle{empty}
+
+\vspace{3.5cm}
+\begin{center}
+\includegraphics{junior}
+
+\vspace{2cm}
+
+{\fontsize{30}{38}\selectfont {\sf 4. ročník}}
+
+\vspace{0.8cm}
+
+{\fontsize{20}{25}\selectfont {\sf 2015/16}}
+
+\vspace{1cm}
+
+{\fontsize{50}{60}\selectfont {\sf \opt{lngcs}{Vzorová řešení}\opt{lngsk}{Vzorové riešenia}}}
+
+\vspace{2cm}
+\hspace{0.7cm}
+\parbox{0.30\linewidth}{\includegraphics[width=3.5cm]{mff}}
+\parbox{0.30\linewidth}{\includegraphics[width=3.5cm]{vyfuk}}
+\parbox{0.30\linewidth}{\includegraphics[height=3.5cm]{trojsten}}
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%% PREDMLUVA %%%%%%%%%%%%%%%%
+
+\par\noindent\vspace{1.2cm}\par%
+\input{uvod.tex}
+
+\newpage
+
+%%%%%%%%%%%%% VZORAKY %%%%%%%%%%%%%%%
+\vspace{1cm}
+
+\begin{center}
+\section{\opt{lngcs}{Řešení úloh IV.~ročníku Náboje Junior}\opt{lngsk}{Riešenia úloh IV.~ročníka Náboja Junior}}
+\bigskip
+\end{center}
+
+    \setcounter{problem}{0}
+    \loop{
+        \problemsolution
+    }\ifnum\theproblem<\theproblemscount
+    \repeat
+
+
+\vfill
+\newpage
+
+%%%%%%%%%%%% ZAVERECNE TITULKY %%%%%%%%%%%%%%
+%{}~\vspace{-2\baselineskip}\par\vfill%MAGIC
+%\begin{center}
+%\hspace{1.8cm}
+%\parbox{0.4\linewidth}{\includegraphics[width=3.5cm]{mff}}
+%\parbox{0.4\linewidth}{\includegraphics[height=3.5cm]{fmfi}}
+%\end{center}
+
+{}~\vfill
+%\hrule\medskip
+\input{titulky.tex}
+
+\vfill
+
+%%%%%%%%%%%%%% AUTORI %%%%%%%%%%%%%%%%
+
+\par\noindent\vspace{\fill}\par%
+\input{zasluhy.tex}
+
+\newpage
+
+\end{document}

@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://fykos.cz/xml/export/schema"><SOAP-ENV:Body><export qid="tex.emails">
+  <parameters>
+    <parameters name="contest">1</parameters>
+  </parameters>
+  <column-definitions>
+    <column-definition name="tex_signature"/>
+    <column-definition name="name"/>
+    <column-definition name="email"/>
+  </column-definitions>
+  <data>
+    <row>
+      <col>ambrozova</col>
+      <col>Monika Ambrožová</col>
+      <col>monika@fykos.cz</col>
+    </row>
+    <row>
+      <col>andryskova</col>
+      <col>Alžběta Andrýsková</col>
+      <col>betka@fykos.cz</col>
+    </row>
+    <row>
+      <col>ayazi</col>
+      <col>Filip Ayazi</col>
+      <col>filip@fykos.cz</col>
+    </row>
+    <row>
+      <col>bahyl</col>
+      <col>Jakub Bahyl</col>
+      <col>kubo@fykos.cz</col>
+    </row>
+    <row>
+      <col>bara</col>
+      <col>Václav Bára</col>
+      <col>found@fykos.cz</col>
+    </row>
+    <row>
+      <col>barta</col>
+      <col>Tomáš Bárta</col>
+      <col>tomas@fykos.cz</col>
+    </row>
+    <row>
+      <col>bartosova</col>
+      <col>Kateřina Bartošová</col>
+      <col>kacak@fykos.cz</col>
+    </row>
+    <row>
+      <col>bednar</col>
+      <col>Jan Bednář</col>
+      <col>beda@fykos.cz</col>
+    </row>
+    <row>
+      <col>blaha</col>
+      <col>Jiří Blaha</col>
+      <col>jirka@fykos.cz</col>
+    </row>
+    <row>
+      <col>bozon</col>
+      <col>Marek Božoň</col>
+      <col>marek@fykos.cz</col>
+    </row>
+    <row>
+      <col>brom</col>
+      <col>Pavel Brom</col>
+      <col>paja@fykos.cz</col>
+    </row>
+    <row>
+      <col>burianova</col>
+      <col>Nicola Burianová</col>
+      <col>nicola@fykos.cz</col>
+    </row>
+    <row>
+      <col>calabkova</col>
+      <col>Markéta Calábková</col>
+      <col>calabkovam@fykos.cz</col>
+    </row>
+    <row>
+      <col>cervenak</col>
+      <col>Michal Červeňák</col>
+      <col>miso@fykos.cz</col>
+    </row>
+    <row>
+      <col>docekalova</col>
+      <col>Zuzana Dočekalová</col>
+      <col>zuzka@fykos.cz</col>
+    </row>
+    <row>
+      <col>dockalova</col>
+      <col>Veronika Dočkalová</col>
+      <col>verca@fykos.cz</col>
+    </row>
+    <row>
+      <col>dolejsi</col>
+      <col>Jakub Dolejší</col>
+      <col>krasnykuba@fykos.cz</col>
+    </row>
+    <row>
+      <col>dolezal</col>
+      <col>Jakub Doležal</col>
+      <col>j4kubd0lezal@fykos.cz</col>
+    </row>
+    <row>
+      <col>dolezalp</col>
+      <col>Petr Doležal</col>
+      <col>petr.d@fykos.cz</col>
+    </row>
+    <row>
+      <col>dudic</col>
+      <col>Ján Dudič</col>
+      <col></col>
+    </row>
+    <row>
+      <col>dupkala</col>
+      <col>Daniel Dupkala</col>
+      <col>daniel.dupkala@fykos.cz</col>
+    </row>
+    <row>
+      <col>dusek</col>
+      <col>Jindřich Dušek</col>
+      <col>jindra@fykos.cz</col>
+    </row>
+    <row>
+      <col>dvorak</col>
+      <col>Jakub Dvořák</col>
+      <col>faktorial@fykos.cz</col>
+    </row>
+    <row>
+      <col>fiala</col>
+      <col>Tomáš Fiala</col>
+      <col>tomas.fiala@fykos.cz</col>
+    </row>
+    <row>
+      <col>flandera</col>
+      <col>Aleš Flandera</col>
+      <col>flandera.ales@fykos.cz</col>
+    </row>
+    <row>
+      <col>formanek</col>
+      <col>Martin Formánek</col>
+      <col>martin@fykos.cz</col>
+    </row>
+    <row>
+      <col>fusek</col>
+      <col>Lukáš Fusek</col>
+      <col>lukas@fykos.cz</col>
+    </row>
+    <row>
+      <col>gabrielova</col>
+      <col>Simona Gabrielová</col>
+      <col>simca@fykos.cz</col>
+    </row>
+    <row>
+      <col>gajdosoci</col>
+      <col>Radomír Gajdošoci</col>
+      <col>radomir@fykos.cz</col>
+    </row>
+    <row>
+      <col>grund</col>
+      <col>Lubomír Grund</col>
+      <col>grund@fykos.cz</col>
+    </row>
+    <row>
+      <col>hanzelka</col>
+      <col>Miroslav Hanzelka</col>
+      <col>mirek@fykos.cz</col>
+    </row>
+    <row>
+      <col>havelka</col>
+      <col>Tomáš Havelka</col>
+      <col>havis@fykos.cz</col>
+    </row>
+    <row>
+      <col>hendrych</col>
+      <col>Erik Hendrych</col>
+      <col>erik@fykos.cz</col>
+    </row>
+    <row>
+      <col>hofierka</col>
+      <col>Jaroslav Hofierka</col>
+      <col></col>
+    </row>
+    <row>
+      <col>humplik</col>
+      <col>Jan Humplík</col>
+      <col>honza@fykos.cz</col>
+    </row>
+    <row>
+      <col>hvizdos</col>
+      <col>Dávid Hvizdoš</col>
+      <col>david@fykos.cz</col>
+    </row>
+    <row>
+      <col>chejnovska</col>
+      <col>Anna Chejnovská</col>
+      <col>anca@fykos.cz</col>
+    </row>
+    <row>
+      <col>vyfukcek</col>
+      <col>Výfuček I.</col>
+      <col></col>
+    </row>
+    <row>
+      <col>irinkov</col>
+      <col>Pavel Irinkov</col>
+      <col>pavel@fykos.cz</col>
+    </row>
+    <row>
+      <col>jakub</col>
+      <col>Zdeněk Jakub</col>
+      <col>zdenekjakub@fykos.cz</col>
+    </row>
+    <row>
+      <col>janitorova</col>
+      <col>Lýdia Janitorová</col>
+      <col>janitorova@fykos.cz</col>
+    </row>
+    <row>
+      <col>janos</col>
+      <col>Jaroslav Janoš</col>
+      <col>jarda@fykos.cz</col>
+    </row>
+    <row>
+      <col>jerabkova</col>
+      <col>Tereza Jeřábková</col>
+      <col>terkaj@fykos.cz</col>
+    </row>
+    <row>
+      <col>jirotka</col>
+      <col>Tomáš Jirotka</col>
+      <col>byrot@fykos.cz</col>
+    </row>
+    <row>
+      <col>kalasova</col>
+      <col>Dominika Kalasová</col>
+      <col>dominika@fykos.cz</col>
+    </row>
+    <row>
+      <col>knopp</col>
+      <col>Ondřej Knopp</col>
+      <col>Ondra@fykos.cz</col>
+    </row>
+    <row>
+      <col>kocak</col>
+      <col>Jakub Kocák</col>
+      <col>jakub@fykos.cz</col>
+    </row>
+    <row>
+      <col>kociscak</col>
+      <col>Samuel Kočiščák</col>
+      <col>samo@fykos.cz</col>
+    </row>
+    <row>
+      <col>kolar</col>
+      <col>Karel Kolář</col>
+      <col>karel@fykos.cz</col>
+    </row>
+    <row>
+      <col>kolars</col>
+      <col>Štěpán Kolář</col>
+      <col>stepan@fykos.cz</col>
+    </row>
+    <row>
+      <col>kolinska</col>
+      <col>Andrea Kolínská</col>
+      <col>andrejka@fykos.cz</col>
+    </row>
+    <row>
+      <col>kominek</col>
+      <col>Martin Komínek</col>
+      <col></col>
+    </row>
+    <row>
+      <col>komm</col>
+      <col>Michael Komm</col>
+      <col>robin@fykos.cz</col>
+    </row>
+    <row>
+      <col>konig</col>
+      <col>Vít König</col>
+      <col>vitek@fykos.cz</col>
+    </row>
+    <row>
+      <col>koutny</col>
+      <col>Michal Koutný</col>
+      <col>michal@fykos.cz</col>
+    </row>
+    <row>
+      <col>kremel</col>
+      <col>Tomáš Kremel</col>
+      <col>tomask@fykos.cz</col>
+    </row>
+    <row>
+      <col>kundratova</col>
+      <col>Lucie Kundratová</col>
+      <col>lucka@fykos.cz</col>
+    </row>
+    <row>
+      <col>ledvina</col>
+      <col>Lukáš Ledvina</col>
+      <col>lukasl@fykos.cz</col>
+    </row>
+    <row>
+      <col>markova</col>
+      <col>Barbora Marková</col>
+      <col></col>
+    </row>
+    <row>
+      <col>martaus</col>
+      <col>Marek Martaus</col>
+      <col>martaus@fykos.cz</col>
+    </row>
+    <row>
+      <col>maskova</col>
+      <col>Tereza Mašková</col>
+      <col>terezaM@fykos.cz</col>
+    </row>
+    <row>
+      <col>matousek</col>
+      <col>Mikuláš Matoušek</col>
+      <col>mikulas@fykos.cz</col>
+    </row>
+    <row>
+      <col>mickova</col>
+      <col>Zuzana Mičková</col>
+      <col>zuzka.micko@fykos.cz</col>
+    </row>
+    <row>
+      <col>michalek</col>
+      <col>Jakub Michálek</col>
+      <col>jmi@fykos.cz</col>
+    </row>
+    <row>
+      <col>michna</col>
+      <col>Tomáš Michna</col>
+      <col>Michna@fykos.cz</col>
+    </row>
+    <row>
+      <col>mikula</col>
+      <col>Jan Mikula</col>
+      <col>jan.mikula@fykos.cz</col>
+    </row>
+    <row>
+      <col>moravec</col>
+      <col>Tomáš Moravec</col>
+      <col>tomasm@fykos.cz</col>
+    </row>
+    <row>
+      <col>narozny</col>
+      <col>Jiří Nárožný</col>
+      <col>nahry@fykos.cz</col>
+    </row>
+    <row>
+      <col>necada</col>
+      <col>Marek Nečada</col>
+      <col>marekn@fykos.cz</col>
+    </row>
+    <row>
+      <col>necadova</col>
+      <col>Alžběta Nečadová</col>
+      <col>bjetka@fykos.cz</col>
+    </row>
+    <row>
+      <col>nemecd</col>
+      <col>David Němec</col>
+      <col>david@fykos.cz</col>
+    </row>
+    <row>
+      <col>nesporova</col>
+      <col>Kristína Nešporová</col>
+      <col>kiki@fykos.cz</col>
+    </row>
+    <row>
+      <col>nozicka</col>
+      <col>Michal Nožička</col>
+      <col>nozicka@fykos.cz</col>
+    </row>
+    <row>
+      <col>ondac</col>
+      <col>Peter Ondáč</col>
+      <col></col>
+    </row>
+    <row>
+      <col>otypka</col>
+      <col>Marek Otýpka</col>
+      <col></col>
+    </row>
+    <row>
+      <col>pechalr</col>
+      <col>Radim Pechal</col>
+      <col>radim@fykos.cz</col>
+    </row>
+    <row>
+      <col>pecha</col>
+      <col>Petr Pecha</col>
+      <col>xlfd@fykos.cz</col>
+    </row>
+    <row>
+      <col>peksova</col>
+      <col>Lada Peksová</col>
+      <col>lada@fykos.cz</col>
+    </row>
+    <row>
+      <col>pikalek</col>
+      <col>Tomáš Pikálek</col>
+      <col>pikos@fykos.cz</col>
+    </row>
+    <row>
+      <col>pilatova</col>
+      <col>Eliška Pilátová</col>
+      <col>eliska@fykos.cz</col>
+    </row>
+    <row>
+      <col>podolnik</col>
+      <col>Aleš Podolník</col>
+      <col>ales@fykos.cz</col>
+    </row>
+    <row>
+      <col>polednikova</col>
+      <col>Jana Poledniková</col>
+      <col>janap@fykos.cz</col>
+    </row>
+    <row>
+      <col>pozar</col>
+      <col>Borek Požár</col>
+      <col></col>
+    </row>
+    <row>
+      <col>prachar</col>
+      <col>Jan Prachař</col>
+      <col>honzik@fykos.cz</col>
+    </row>
+    <row>
+      <col>preiss</col>
+      <col>Jan Preiss</col>
+      <col></col>
+    </row>
+    <row>
+      <col>pulmann</col>
+      <col>Ján Pulmann</col>
+      <col>janci@fykos.cz</col>
+    </row>
+    <row>
+      <col>rapcak</col>
+      <col>Miroslav Rapčák</col>
+      <col>miro@fykos.cz</col>
+    </row>
+    <row>
+      <col>rosicka</col>
+      <col>Kateřina Rosická</col>
+      <col>kacka@fykos.cz</col>
+    </row>
+    <row>
+      <col>rysavy</col>
+      <col>Petr Ryšavý</col>
+      <col>petr@fykos.cz</col>
+    </row>
+    <row>
+      <col>sedlacek</col>
+      <col>Petr Sedláček</col>
+      <col>keckas@fykos.cz</col>
+    </row>
+    <row>
+      <col>scholz</col>
+      <col>Marek Scholz</col>
+      <col>mara@fykos.cz</col>
+    </row>
+    <row>
+      <col>skokova</col>
+      <col>Adéla Skoková</col>
+      <col>adela@fykos.cz</col>
+    </row>
+    <row>
+      <col>skoupy</col>
+      <col>Viktor Skoupý</col>
+      <col>skoupy@fykos.cz</col>
+    </row>
+    <row>
+      <col>slama</col>
+      <col>Jakub Sláma</col>
+      <col>slama@fykos.cz</col>
+    </row>
+    <row>
+      <col>smitalova</col>
+      <col>Kateřina Smítalová</col>
+      <col>katka@fykos.cz</col>
+    </row>
+    <row>
+      <col>staryd</col>
+      <col>Dominik Starý</col>
+      <col></col>
+    </row>
+    <row>
+      <col>steinhartova</col>
+      <col>Tereza Steinhartová</col>
+      <col>terkas@fykos.cz</col>
+    </row>
+    <row>
+      <col>stodolova</col>
+      <col>Kateřina Stodolová</col>
+      <col>katas@fykos.cz</col>
+    </row>
+    <row>
+      <col>sykoraj</col>
+      <col>Jáchym Sýkora</col>
+      <col>jachym@fykos.cz</col>
+    </row>
+    <row>
+      <col>safin</col>
+      <col>Jakub Šafin</col>
+      <col>xellos@fykos.cz</col>
+    </row>
+    <row>
+      <col>simunek</col>
+      <col>Petr Šimůnek</col>
+      <col>petas@fykos.cz</col>
+    </row>
+    <row>
+      <col>sromekova</col>
+      <col>Karolína Šromeková</col>
+      <col>cajka@fykos.cz</col>
+    </row>
+    <row>
+      <col>stefanikovap</col>
+      <col>Petra Štefaníková</col>
+      <col>petras@fykos.cz</col>
+    </row>
+    <row>
+      <col>stefanikova</col>
+      <col>Radka Štefaníková</col>
+      <col>radka@fykos.cz</col>
+    </row>
+    <row>
+      <col>sustkova</col>
+      <col>Hana Šustková</col>
+      <col>hanka@fykos.cz</col>
+    </row>
+    <row>
+      <col>svancara</col>
+      <col>Patrik Švančara</col>
+      <col>pato@fykos.cz</col>
+    </row>
+    <row>
+      <col>timko</col>
+      <col>Lukáš Timko</col>
+      <col>lukast@fykos.cz</col>
+    </row>
+    <row>
+      <col>touska</col>
+      <col>Kryštof Touška</col>
+      <col>krystof@fykos.cz</col>
+    </row>
+    <row>
+      <col>trejbalj</col>
+      <col>Jan Trejbal</col>
+      <col>jan@fykos.cz</col>
+    </row>
+    <row>
+      <col>trembulakova</col>
+      <col>Pavla Trembulaková</col>
+      <col>pavlat@fykos.cz</col>
+    </row>
+    <row>
+      <col>uhlirova</col>
+      <col>Tereza Uhlířová</col>
+      <col>teri@fykos.cz</col>
+    </row>
+    <row>
+      <col>venclova</col>
+      <col>Veronika Venclová</col>
+      <col></col>
+    </row>
+    <row>
+      <col>vinklarek</col>
+      <col>Ivo Vinklárek</col>
+      <col>ivo@fykos.cz</col>
+    </row>
+    <row>
+      <col>volkova</col>
+      <col>Kateřina Volková</col>
+      <col>katy@fykos.cz</col>
+    </row>
+    <row>
+      <col>vosmera</col>
+      <col>Kuba Vošmera</col>
+      <col>kuba@fykos.cz</col>
+    </row>
+    <row>
+      <col>witzany</col>
+      <col>Vojtěch Witzany</col>
+      <col>witzanyv@fykos.cz</col>
+    </row>
+    <row>
+      <col>zabojnikova</col>
+      <col>Tereza Zábojníková</col>
+      <col>terka@fykos.cz</col>
+    </row>
+    <row>
+      <col>zadrazil</col>
+      <col>Tomáš Zadražil</col>
+      <col>tomasz@fykos.cz</col>
+    </row>
+    <row>
+      <col>zelenka</col>
+      <col>Ondřej Zelenka</col>
+      <col>zelenka@fykos.cz</col>
+    </row>
+  </data>
+</export></SOAP-ENV:Body></SOAP-ENV:Envelope>

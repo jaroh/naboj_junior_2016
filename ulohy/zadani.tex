@@ -1,0 +1,103 @@
+\expandafter\ifx\csname classoptions\endcsname\relax
+  \def\classoptions{}
+\fi
+\documentclass[10pt,vyfuk,\classoptions]{fksempty}
+\usepackage{xstring}
+\usepackage{fp}
+\geometry{ignoreheadfoot,
+  a4paper,
+  hmargin=0.7cm,
+  tmargin=0.20cm,
+  bmargin=0.0cm,
+  headsep=0.0cm}
+
+\usepackage[fyziklani2]{fkslegacyloader}
+
+\problemsdir{./problems}
+
+% this class doesn't support those, but we use same common
+\newcommand{\leftheader}[1]{\relax}
+\newcommand{\rightheader}[1]{\relax}
+\input{common.tex}
+\input{teams/teams-\placeno.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Setting problems per page
+% here set appropriate height
+%
+% Parameters of geometry may be modified,
+% (Note they're fine tuned to vertically center content
+% (which should be done in a more generic way, however.))
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\barcode}[1]{\bf\tt\LARGE%
+    \def\probnumfull{\ifnum\theproblem<10 0\fi\theproblem}%
+    \StrChar{#1}{1}[\inpA]%1
+    \StrChar{#1}{2}[\inpB]%2
+    \StrChar{#1}{3}[\inpC]%3
+    \StrChar{#1}{4}[\inpD]%4
+    \StrChar{#1}{5}[\inpE]%5
+    \StrChar{#1}{6}[\inpF]%6
+    \StrChar{\probnumfull}{1}[\inpG]%7
+    \StrChar{\probnumfull}{2}[\inpH]%8
+    \FPeval{\result}{%
+        round(%
+            7*(\inpA+\inpD+\inpG) + %
+            3*(\inpB+\inpE+\inpH) + %
+            9*(\inpC+\inpF      )   %
+        ,0)%
+    }%
+    \FPeval{\finalresult}{round(\result-trunc(\result/10,0)*10,0)}%
+    % sazba
+    \inpA\inpB\inpC\inpD\Huge\inpE\inpF\inpG\inpH\finalresult%
+}
+
+
+\makeatletter
+\newcommand\problemtaskbox{%
+\setcounter{figure}{0}
+\vspace{-2mm}\par% !!MAGIC!!
+\noindent\begin{minipage}[t][67mm]{\textwidth-1cm}
+	\problemtask\par
+\end{minipage}%
+% 57mm !!MAGIC!!
+\hspace{3mm}\rotatebox{-90}{\makebox[57mm][t]{\hfill\expandafter\barcode\csname teamn@\theteamno\endcsname\relax\hfill}}%
+\par%
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.5pt}}
+}
+\makeatother
+
+% here should be correct number of problems
+\begin{document}
+\newcounter{teamscount}\setcounter{teamscount}{\teamscount}
+\newcounter{teamno}\setcounter{teamno}{0}
+\opt{sorted}{%
+\loop{
+    \stepcounter{teamno}
+    \setcounter{problem}{0}
+    \loop{
+    \ifthenelse{\equal{\intcalcMod{\value{problem}}{4}}{0}}{\newpage\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.5pt}}\nopagebreak[4]}{}
+    \problemtaskbox
+    }\ifnum\theproblem<\theproblemscount
+    \repeat
+    \clearpage
+}\ifnum\theteamno<\theteamscount
+\repeat
+}%
+\opt{tisk}{%
+\loop{
+    \stepcounter{teamno}
+    \setcounter{problem}{0}
+    \loop{
+    \problemtaskbox
+    \addtocounter{problem}{10}\problemtaskbox
+    \addtocounter{problem}{10}\problemtaskbox
+    \addtocounter{problem}{10}\problemtaskbox
+    \addtocounter{problem}{-33}
+    }\ifnum\theproblem<11%UGLY but now workinkg \theproblemscount
+    \repeat
+    \clearpage
+}\ifnum\theteamno<\theteamscount
+\repeat
+}
+\end{document}

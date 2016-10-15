@@ -1,0 +1,75 @@
+\problemsdir{./problems}
+\renewcommand\problemnum[2]{\arabic{#2}}
+\renewcommand\problemstats{\relax}
+\renewcommand\problempoints{\quad \textbf{\opt{lngcs}{Tým}\opt{lngsk}{Tím} \teamnumber{\theteamno}} {\footnotesize (\teamname{\theteamno})}}
+\leftheader{Náboj Junior}
+\rightheader{IV. ročník \qquad \opt{lngcs}{20. listopadu 2015}\opt{lngsk}{20. novembra 2015}}
+
+\newcounter{problemscount}% total number of problems set in sort.tex
+
+\makeatletter
+\renewcommand\@metaprobletter[1]{\the#1}
+% \renewcommand*{\sign@ture}[1]{%
+% \hspace{10pt}
+% \begin{tabular}{c}
+% \sigstyle{\signame{#1}}\\
+% %\mail{\sigmail{#1}}
+% \end{tabular}}
+
+% MFNáboj doesn't have problem names so be dirty and  redefine whole problem macro
+\renewcommand\problemtask{%
+  \tasktrue\solutionfalse\solutionsinglefalse%
+  \stepcounter{problem}%
+  \@LoadProblem{\thebatch}{\theproblem}{%
+	  \problem[\metaprobletter{problem}: \@probname]{Úloha \problemnum{batch}{problem} \,\ldots{} \@probname \hfill {\normalfont\normalsize\problempoints}}%
+   \nopagebreak\ifthenelse{\equal{\@probfig}{N/A}}{}{\@probfig}\nopagebreak%
+   \@probtask%
+  }
+}
+\renewcommand\pr@blemsolution{%
+   \problem[\metaprobletter{problem}: \@probname]%
+   {Úloha \problemnum{solvedbatch}{problem} \,\ldots{} \@probname \hfill
+      {\normalfont\normalsize\problemstats}}%
+   \nopagebreak\ifthenelse{\equal{\@probfig}{N/A}}{}{\@probfig}\nopagebreak%
+   \textsl{\@probtask}
+%   \signed{\textit{\@proborigin}}
+
+   \medskip
+
+   \noindent \@probsolution\par
+   \nopagebreak\vspace{6pt}\nopagebreak\expandafter\signature\@probsolauthors\par
+}
+
+% team names
+\newcommand\newteam[3]{%
+  \expandafter\def\csname teamn@#1\endcsname{%
+    #2%
+  }%
+  \expandafter\def\csname team@#1\endcsname{%
+    #3%
+  }%
+}
+\newcommand\teamname[1]{%
+  \expandafter\ifx\csname team@#1\endcsname\relax
+  BEZ NÁZVU% TODO označit i stylem písma, aby to někdo nevybrakoval název týmu "BEZ NÁZVU"?
+  \else
+  \expandafter\csname team@#1\endcsname\fi
+}
+\newcommand\teamnumber[1]{%
+  \expandafter\ifx\csname teamn@#1\endcsname\relax
+  BEZ ČÍSLA
+  \else
+  \expandafter\csname teamn@#1\endcsname\fi
+}
+
+
+\makeatother
+
+\IfFileExists{problems/sort.tex}{\input{problems/sort.tex}}{}% setup problem names and problemscount
+
+\newcommand{\TODO}[1][]{\textbf{!TODO!} #1\par}
+\def\micro{\grk{m}} % override macros
+
+% Slovak compatibility
+\newcommand{\abs}[1]{|#1|}
+\renewcommand{\l}{\ell}

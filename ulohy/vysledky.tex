@@ -1,0 +1,26 @@
+\expandafter\ifx\csname classoptions\endcsname\relax
+  \def\classoptions{}
+\fi
+\documentclass[vyfuk,\classoptions]{fksgeneric}
+
+\input{common.tex}
+\newcommand\uloha[6]{#3}
+
+
+\newcommand\problemresult{%
+\stepcounter{problem}
+% sloupec s výsledky zarovnán na levý "okraj"
+% pomni, že šířka závisí na vypisovaném textu
+\makebox[20mm][l]{\textbf{Úloha \theproblem}} \input{./problems/problem_\ifcase\theproblem\problemname\fi.tex}\par
+\smallskip
+}
+
+
+\begin{document}
+    \setcounter{problem}{0}
+    \loop{
+        \problemresult
+    }\ifnum\theproblem<\theproblemscount
+    \repeat
+%\makefooter
+\end{document}

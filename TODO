@@ -1,0 +1,17 @@
+﻿Zkontrolovat roky vsude
+ulohy/
+    * titulky.tex -- asi text na zadni strance brozurky
+    * uvod.tex    -- text někam na začátek řešení
+
+
+    -- vyrobit slovensku mutaciu vysledkov
+    -- doplit do vzorcovníku konstanty
+                  -- gravitační zrychlení g=10m/s^2
+                  -- rychlost zvuku uvažujeme c=300m/s
+                  -- hustota vody \rho=1000kg/m^3
+                  -- odmocniny z celých čísel (přesnost na stotiny)
+				  -- anglicku abecedu
+				  -- druhe mocniny cisel 1..25
+
+--nové logo matfyzu do titulky.tex?
+--zkontrolovat že v \eq{} není nikde tilda ~ (vlna ji tam dává a nemá tam být)
