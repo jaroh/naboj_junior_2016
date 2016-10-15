@@ -1,0 +1,107 @@
+﻿\expandafter\ifx\csname classoptions\endcsname\relax
+  \def\classoptions{}
+\fi
+\documentclass[vyfuk,\classoptions]{fksempty}
+
+\pagestyle{empty}
+
+\begin{document}
+\section{Manuál pro zadavače vyřešených úloh}
+
+\noindent
+Jako zadavač se staráš o technické věci (projektor a administrátorské
+rozhraní). Máš na starosti:
+
+\begin{compactitem}
+	\item ovládání projektoru a~že se na něm promítají v~průběhu soutěže aktuální výsledky,
+	\item kontrolu e-mailové konference \url{junior-mesta@vyfuk.mff.cuni.cz} (měl bys v ní být),
+	\item v~průběhu soutěže zadáváš do systému kódy úloh,
+	\item po soutěži uděláš \textbf{Room review},
+	\item pak pomůžeš při tvorbě diplomů (v admin. rozhraní máš nezakrytou výsledkovou listinu).
+\end{compactitem}
+
+\medskip
+
+\subsection{IT support aneb co udělat hned ráno}
+\begin{compactenum}
+	\item Přihlaš se na \url{junior.naboj.org/admin}. Pokud by ti nefungovalo
+přihlášení, ihned kontaktuj centrálu (607 064 672, Patrik Švančara).
+	\item Otevři si mail. Cca 30 min před začátkem ti přijde mail, na který pak odpovíš, abychom věděli, kdo je online.
+	\item Vyzkoušej, zda-li máš v prohlížeči povolen Javascript, a zda-li ti funguje stránka Operators $\rightarrow$ Barcode scanning.
+	\item Vygeneruj aktuální seznam týmů (Documents $\rightarrow$ Team lists),
+tedy klikni u svého města na Generate a pak na link vedoucí k pdf. Seznam
+vytiskni / dones na notebooku / jinak dodej registrátorům.
+	\item Možná se změní nějaká jména, resp. ročníky u soutěžících.
+Všechny změny aktualizuj pomocí Operators $\rightarrow$ Edit participants.
+	\item Znovu {\bf vygeneruj} Team list a předej ho člověku, který bude
+vypisovat diplomy.
+\end{compactenum}
+
+\subsection{Live výsledky}
+Před soutěží zapoj projektor a spáruj jej s PC. Do okna projektoru umísti prohlížeč
+s výsledkami (Results $\rightarrow$ Live broadcast) na fullscreen. Měl by tam běžet
+odpočet času do začátku Náboje. \\
+
+
+\noindent
+Posledních 15 minut je výsledkovka zmrazená, tzn. neaktualizuje se, ale pořád
+se odpočítává čas do konce soutěže, takže projektor nevypínej. \\
+
+\noindent
+Ty můžeš výsledky vidět v části Results $\rightarrow$ Admin secret.
+
+\subsection{Zadávání úloh}
+Úlohy ti bude podávat vydavač. Doporučeno je zadávat do systému úlohy
+{\bf ve stejném pořadí}, jak je týmy nosí. Po zadání do systému si úlohy u sebe
+nechej a průběžně je rozděluj podle týmů (není to nutné, ale v případě problémů
+na konci soutěže si usnadníte práci).
+
+\bigskip
+
+\noindent
+Zadávání výsledků se děje pomocí aplikace Barcode scanning v sekci Operators.
+
+\smallskip
+
+\noindent
+Nejdříve vybereš prefix své místnosti. Je to to číslo, na které začínají
+všechny kódy týmů v místnosti (případně jsou to první (malé) číři číslice
+na všech úlohách, které máte v místnosti). Toto číslo již do systému nenahazuješ.
+
+\smallskip
+
+\noindent
+Samotné zadávání funguje tak, že do pole Barcode \emph{opíšeš} pětimístné
+číslo napsané velkými čísly na boku úlohy. Pak stiskneš enter nebo klikneš
+na submit. Dole se začne vytvářet tabulka se zadanými kódy. Vždy zkontroluj,
+jestli jsi zadal správný kód (poslední číslice kódu je číslice pro kontrolní
+součet, \uv{náhodné} zadání jiného platného kódu je tak minimální).
+Pokud jsi udělal chybu, klikni na šipku zpět.
+
+\subsection{Room review}
+Po skončení soutěže a zadání všech vyřešených úloh musíš udělat Room review
+(Operators $\rightarrow$ Room review):
+
+\begin{compactenum}
+	\item Vyber svou místnost kliknutím na lupičku.
+	\item Postupně zadávej kódy {\bf prvních úloh, které jste týmům nevydali}. Pokud jste vydali nějakému týmu všechny
+úlohy, zadej jakoby kód úlohy s pořadovým číslem 0.
+	\item V případě problémů s týmem se podívej na instrukce na stránce, resp. klikni na lupičku u problémového týmu.
+Zobrazí se ti podrobné info o nahraných úlohách.
+	\item Po zezelenání všech týmů jsou výsledky kompletní.
+	\item Výsledky \textbf{až po této kontrole} předej vypisovači diplomů, aby do nich napsal umístění.
+	\item Vygeneruj rovněž potvrzení o účasti (Documents $\rightarrow$ Diplomas)
+a zabezpeč jeho tisk. Potvrzení by měl získat každý účastník,
+	proto vygenerovaný soubor nezapomeňte vytisknout 4-krát.
+\end{compactenum}
+
+\subsection{Zobrazování výsledků}
+Pro napínavé vyhlašování výsledků slouží Results $\rightarrow$ Final announcements. Zde
+si nastavíš, kolik týmů má být skrytých a pohybem šipky nahoru je postupně
+odhaluješ. Toto můžete využít při vyhlašování vítězů, není to ale nutnost.
+(Před samotným vyhlašováním doporučujeme zkontrolovat funkčnost této stránky.)
+
+\subsection{Po vyhlášení výsledků}
+Přihlaš se do admin. prostředí a na úvodní stránce zaznač v sloupci Announced,
+že výsledky byly vyhlášeny. Tím tvoje práce končí :).
+\end{document}
