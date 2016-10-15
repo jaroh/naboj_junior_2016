@@ -1,0 +1,21 @@
+﻿% Neodmazavejte ty % jinak vam Donald ruce ukousne!!!
+%
+% Bylo by super, když se úloha zásadně přejmenuje, tak přejmenovat
+% i její soubor a opravit to v problem-sort.tex
+%
+\uloha{\opt{lngcs}{odporný NÁBOJ}\opt{lngsk}{}}% název s malým písmenem (velké u vl. jmen)
+{\opt{lngcs}{% 
+Radka se nudila na praktikách z elektřiny a tak si z rezistorů, každý s odporem
+$"10 \Omega"$, sestavila nápis 'NABOJ', jak je znázorněno na obrázku. POté mezi
+zvýrazněnými body změřila odpor a sestavila písmenka vedle sebe od nejmenší
+naměřené hodnoty po největší. Jaké "slovo" získala?
+}%
+\opt{lngsk}{% zadanie SK
+}}%
+{}% výsledek ve všech možných formách včetně veličiny
+{}% autor vzoráku~--~typicky prijmeni (jinak o tom vis), vsechna mala
+{\opt{lngcs}{% řešení CZ
+}%
+\opt{lngsk}{% riešenie SK
+}}%
+{\opt{lngcs}{}\opt{lngsk}{}}% pôvod úlohy
