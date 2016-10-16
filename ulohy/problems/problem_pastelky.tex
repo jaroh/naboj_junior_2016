@@ -14,6 +14,20 @@ vedle sebe?
 {Pastelky může uspořádat $480$ různými způsoby.}% výsledek ve všech možných formách včetně veličiny
 {}% autor vzoráku~--~typicky prijmeni (jinak o tom vis), vsechna mala
 {\opt{lngcs}{% řešení CZ
+Kdyby Borek neměl omezení na sousedství žluté a zelené pastelky, počet možných
+uložení lze vypočíst jako součin možností uložení pastelek: první pastelku
+lze uložit do penálu na šest míst, druhou na zbylých pět, třetí na čtyři atd.
+čímž dostaneme $6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 720$ možností.
+
+Pokusme se teď zjistit počet nevyhovujících případů, tzn. kolik uspořádání
+má zelenou a žlutou pastelku vedle sebe. Dvojici pastelek lze umístit do
+penálu na celkem $5$ pozic, tzn. $10$ různými způsoby (zelenou a žlutou
+můžeme na každé z pozic prohodit). Zbylé čtyři pastelky pak lze umístit
+$4 \cdot 3 \cdot 2 \cdot 1 = 24$ způsoby na zbylé volné pozice v penálu.
+Nevyhovujících možností je tedy $10 \cdot 24 = 240$ a vyhovujících
+$720 - 240 = 480$.
+
+Borek tedy může umístit do penálu pastelky $480$ různými způsoby.
 }%
 \opt{lngsk}{% riešenie SK
 }}%
