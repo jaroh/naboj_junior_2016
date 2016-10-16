@@ -16,8 +16,29 @@ Jaká je vzdálenost bodu $\bod{P}$ od těžiště krychle, jestliže délka jej
 {Vzdálenost bodu $\bod{P}$ od těžiště krychle je $a\sqrt{9/8} = 3a\sqrt{2}/4$.}% výsledek ve všech možných formách včetně veličiny
 {}% autor vzoráku~--~typicky prijmeni (jinak o tom vis), vsechna mala
 {\opt{lngcs}{% řešení CZ
+Podíváme-li se na situaci seshora (viz obrázek), situace se zjednoduší, pač
+seshora vidíme pouze posunutí ve vodorovném směru. Ihned si můžeme všimnout,
+že vodorovná vzdálenost průsečníku $\bod{EX}$ a roviny $\bod{KLM}$, tzn. bodu
+$\bod{P}$, od středu krychle je rovna jedné čtvrtine uhlopříčky. Délka
+uhlopříčky je z Pythagorovy věty $u = \sqrt{a^2 + a^2} = a \sqrt{2}$, takže
+její čtrtina je $x = u/4 = a\sqrt{2}/4$.
+
+Podíváme-li se na situaci zboku, můžeme si všimnout, že trojúhelníky vymezené
+stranami $\bod{AE}$, $\bod{AB}$, přímkou $\bod{EX}$ a bodem $\bod{P}$ mají
+všechny úhly shodné, takže jsou si podobné a poměr jejich stran je rovný ${1:2}$.
+Odtud určíme, že svislá vzdálenost bodu $\bod{P}$ od úsečky $\bod{AB}$ je
+$a/2$, a tedy svislá vzdálenost tohoto bodu od středu krychle (jejího těžiště)
+je $y = a/2 + a/2 = a$.
+
+Přímou vzdálenost bodu $\bod{P}$ od středu krychle určíme z Pythagorovy věty,
+protože již známe jeho vodorovnou ($x$ a svislou vzdálenost ($y$):
+\eq{
+  d = \sqrt{x^2 + y^2} = \sqrt{\(\frac{a\sqrt{2}}{4}\)^2 + a^2} = \sqrt{\frac{2a^2}{16} + \frac{16a^2}{16}} = \sqrt{\frac{18a^2}{16}} = \frac{3a\sqrt{2}}{4}\,.
+}
+Bod $\bod{P}$ je vzdálen od těžiště krychle o vzdálenost $3a\sqrt{2}/4$.
 }%
 \opt{lngsk}{% riešenie SK
 }}%
 {\opt{lngcs}{}\opt{lngsk}{}}% pôvod úlohy
-%TODO obrázek krychle
+% TODO obrázek krychle do zadání
+% TODO obrázek krychle seshora a zboku do vzoráku
