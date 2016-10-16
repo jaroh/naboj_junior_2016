@@ -13,6 +13,19 @@ Lukáše by zajímalo, kolik existuje šesticiferných čísel, jejichž cifern�
 {Celkem existuje $180$ takových čísel.}% výsledek ve všech možných formách včetně veličiny
 {}% autor vzoráku~--~typicky prijmeni (jinak o tom vis), vsechna mala
 {\opt{lngcs}{% řešení CZ
+Prvočíselný rozklad čísla $720$ je $2 \cdot 3 \cdot 5 \cdot 5 \cdot 5$.
+Naše šesticiferné číslo má tedy cifry z množiny $\{1;2;3;5;5;5\}$ anebo
+$\{1;1;6;5;5;5\}$ a my akorát musíme určit počet všech možností, jak tyto
+cifry uložit na jednotlivé pozice.
+
+První tři cifry z první množiny lze uložit na pozice ve výsledném číslu
+$6 \cdot 5 \cdot 4 = 120$ způsoby. Zbylé pozice pak musíme obsadit pětkami, tzn.
+pouze jedním způsobem. Stejně můžeme postupovat i v druhé množině.
+Nejdříve si v ní ale \uv{obarvíme} jedničky různou barvou a dostaneme tak
+rovněž $120$ různých čísel. V nich ale vždy nalezneme dvojice, jež mají jedničky
+na stejných pozicích, ale s přehozenými barvami. Po myšlenkovém \uv{odbarvení}
+jedniček nám tak zůstane pouze $60$ různých čísel. Ve finále tak dostaneme, že
+možných šesticiferných čísel je $120 + 60 = 180$.
 }%
 \opt{lngsk}{% riešenie SK
 }}%
