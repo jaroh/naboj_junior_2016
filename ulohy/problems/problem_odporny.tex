@@ -17,6 +17,31 @@ $40/3" \Ohm" = 13 + \frac{1}{3} " \Ohm"$, $80/3" \Ohm" = 26 + \frac{2}{3} " \Ohm
 $"40 \Ohm"$ a $"60 \Ohm"$.}% výsledek ve všech možných formách včetně veličiny
 {}% autor vzoráku~--~typicky prijmeni (jinak o tom vis), vsechna mala
 {\opt{lngcs}{% řešení CZ
+V řešení využijeme vztahy pro odpor sériového a paralelního zapojení. Počítejme
+postupně. V písmenu N je sériově zapojených $8$ rezistorů, takže jeho odpor
+je $R\_N = "10 \Ohm" + "10 \Ohm" + \cdots + "10 \Ohm" = "80 \Ohm"$. Ve středě
+písmena A je paralelní zapojení dvou a jednoho rezistoru. Odpor této trojice
+$R_3$ vypočítáme ze vztahu pro paralelní zapojení
+\eq{
+  \frac{1}{R_3} = \frac{1}{"10 \Ohm"} + \frac{1}{"20 \Ohm"} = \frac{3}{"20 \Ohm"}\,, \ztoho R_3 = \frac{20}{3}" \Ohm"\,.
+}
+Celkový odpor písmena A je pouhé sériové zapojení dvou rezistorů a části
+s odporem $R_3$, tedy
+\eq{
+  R\_A = "10 \Ohm" + \frac{20}{3}" \Ohm" + "10 \Ohm" = \frac{80}{3}" \Ohm"\,.
+}
+V písmenu B jsou síriově zapojené dvě části s odporem $R_3$, tedy
+\eq{
+  R\_B = \frac{20}{3}" \Ohm" + \frac{20}{3}" \Ohm" = \frac{40}{3}" \Ohm"\,.
+}
+V písmenu O jsou dvě paralelní větve, jedna s oporem $"10 \Ohm"$ a druhá, delší,
+s odporem $"70 \Ohm"$. Platí tedy
+\eq{
+  \frac{1}{R\_O} = \frac{1}{"10 \Ohm"} + \frac{1}{"70 \Ohm"} = \frac{8}{"70 \Ohm"}\,, \ztoho R\_O = \frac{70}{8}" \Ohm"\,.
+}
+Konečně v písmenu N jsou sériově zapojené $4$ rezistory s celkovým odporem
+$R\_J = "40 \Ohm"$. Seřazením odporů podle velikosti dostáváme
+$R\_O < R\_B < R\_A < R\_J < R\_N$. Hledané \uv{slovo} je tedy OBAJN.
 }%
 \opt{lngsk}{% riešenie SK
 }}%
