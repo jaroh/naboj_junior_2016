@@ -11,17 +11,29 @@ Zadané jsou jeho čtyři strany $a$, $b$, $c$ a $e$, přičemž $a = c$, a tři
 }%
 \opt{lngsk}{% zadanie SK
 }}%
-{Obsah pětiúhelníku je $"ae"$ (uznejte i jakýkoliv jiný ekvivalentní algebraický tvar).}% výsledek ve všech možných formách včetně veličiny
+{Obsah pětiúhelníku je $ae$ (uznejte i jakýkoliv jiný ekvivalentní algebraický tvar).}% výsledek ve všech možných formách včetně veličiny
 {uhlirova}% autor vzoráku~--~typicky prijmeni (jinak o tom vis), vsechna mala
 {\opt{lngcs}{% řešení CZ
-Útvar si rozdělíme na obdélník a dva trojúhelníky, jejichž obsahu postupně 
-spočteme (viz obrázek).
-Obsah obdélníku je $S_1 = ab$. Obsah trojúhelníku nad obdélníkem je $S_2 = a(e-b)/2$.
+Útvar si rozdělíme na obdélník a dva trojúhelníky, jejichž obsahy postupně 
+spočteme (viz obrázek). Obsah obdélníku je $S_1 = ab$. Obsah pravoúhlého trojúhelníku
+nad obdélníkem je $S_2 = a(e-b)/2$.
+
 Pro výpočet obsahu posledního trojúhelníku potřebujeme zjistit délku strany $d$, 
-k čemuž dospějeme pomocí dvou pythagorových vět (přeponu značíme $x$):
-$a^2 + (e-b)^2 = x^2$ a $x^2 = d^2 + c^2$, tedy $d = sqrt(a^2 + (e-b)^2 - c^2)
-= sqrt(a^2 + (e-b)^2 - a^2) = (e-b)$. Obsah trojúhelníku tedy vychází $S_3 = a(e-b)/2$.
-Celkový obsah získáme jakou součet dílčích: $S = ab + a(e-b)/2 + a(e-b)/2 = ae$.
+k čemuž dospějeme pomocí dvou Pythagorových vět (přeponu značíme $x$):
+\eq[m]{
+  a^2 + \(e - b\)^2 &= x^2\,,\\
+  d^2 + c^2 & = x^2\,,
+}
+Porovnáním levých stran rovnic dostaneme
+\eq{
+  d = \sqrt{a^2 + \(e - b\)^2 - c^2} = \sqrt{a^2 + \(e - b\)^2 - a^2} = e - b\,.
+}
+Obsah trojúhelníku tedy vychází $S_3 = a(e-b)/2$. Celkový obsah získáme součtem
+obsahů dílčích útvarů:
+\eq{
+  S = ab + \frac{a\(e - b\)}{2} + \frac{a\(e - b\)}{2} = ab + a\(e - b\) = ab + ae - ab = ae\,.
+}
+Obsah Terčina pětiúhelníku je $ae$.
 }%
 \opt{lngsk}{% riešenie SK
 }}%
