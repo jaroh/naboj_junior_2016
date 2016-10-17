@@ -13,9 +13,25 @@ desetinné místo.
 \opt{lngsk}{% zadanie SK
 }}%
 {Celkový odpor zapojení je $"\sqrt{3} + 1 \Omega" \approx 2.7 \Omega"$ }% výsledek ve všech možných formách včetně veličiny
-{}% autor vzoráku~--~typicky prijmeni (jinak o tom vis), vsechna mala
+{hofierka}% autor vzoráku~--~typicky prijmeni (jinak o tom vis), vsechna mala
 {\opt{lngcs}{% řešení CZ
+Uvažovaná síť rezistorů je nekonečná, proto přidáme-li k této síti ještě jeden „kousek“, bude jich tam stále nekonečně mnoho a celkový odpor se nezmění. To nám umožní celé zapojení překreslit do velmi jednoduché náhradní sítě, jejíž odpor musí být roven celkovému odporu původní nekonečné sítě (viz obrázek).
+
+Stačí si vzpomenout na pravidlá pro počítaní sériového a paralelního zapojení rezistorů a při označení menšího z rezistorů ($"1 \Ohm"$) $"R"$ a většího $"2R"$ píšeme rovnost:
+\eq{
+  R_c = 2R + \left(\frac{1}{\frac{1}{R}+\frac{1}{R_c}}\right) = 2R + \left(\frac{R_c R}{R_c + R}\right),
+}
+kde $R_c$ značí hledaný celkový odpor zapojení. Nyní upravme rovnici násobením faktorem $(R_c + R)$ a dostáváme:
+\eq{
+  R_c^2 + R_c R = 2R^2 + 2R_c R + R_c R,
+}
+což vede na kvadratickou rovnici:
+\eq{
+  0 = R_c^2 - 2R_c R - 2R^2 = (R_c - R)^2 - 3R^2,
+}
+kterou však umíme vyřešit pouhým odmocněním a úpravou: $"R_c - R = \sqrt{3} R"$. Tedy celkový odpor zapojení je $"\sqrt{3} + 1 \Omega" \approx 2.7 \Omega"$.
 }%
 \opt{lngsk}{% riešenie SK
 }}%
 {\opt{lngcs}{}\opt{lngsk}{}}% pôvod úlohy
+% TODO obrázek prekresleneho zapojeni do vzoráku
