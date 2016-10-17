@@ -5,16 +5,35 @@
 %
 \uloha{\opt{lngcs}{mokrá tyč}\opt{lngsk}{}}% název s malým písmenem (velké u vl. jmen)
 {\opt{lngcs}{% 
-Jaroslav našel doma na půdě tenkou tyč dlouhou $"1 m"$ vyrobenou ze dřeva
-o hustotě $"750 kg/m^3"$. Na jednom konci tyč uchytil přes otočný kloub
-ke stropu a pod ni dal nádobu s vodou (viz obrázek). Jaká délka tyče je pod
-vodou?
+Jaroslav našel doma na půdě tenkou homogenní tyč dlouhou $"1 m"$ vyrobenou ze dřeva
+o hustotě $"750 kg/m^3"$. Na jednom konci tyč uchytil přes otočný kloub ke stropu, pod ni dal nádobu s vodou (viz obrázek) a vyčkal, dokud se ustanoví rovnováha. Jaká délka tyče je pod vodou?
 }%
 \opt{lngsk}{% zadanie SK
 }}%
 {Pod vodou je ponořená polovina tyče, tzn. $"50 cm"$.}% výsledek ve všech možných formách včetně veličiny
-{}% autor vzoráku~--~typicky prijmeni (jinak o tom vis), vsechna mala
+{hofierka}% autor vzoráku~--~typicky prijmeni (jinak o tom vis), vsechna mala
 {\opt{lngcs}{% řešení CZ
+Analýza působícich sil podle Newtonova zákona nám nepomůže, protože ve svislém směru působí kromě vztlakové a tíhové síly navíc i sila závěsu.
+Slovíčko rovnováha v zadání nám napoví, že musíme analyzovat momenty sil. Zkušený fyzik jistě ví, že bod, vůči kterému budeme počítat momenty sil, se volí tak, abychom se zbavili momentu té síly, o které nic nevíme. V našem případě zvolíme otočný kloub a hned píšeme moment tíhové síly:
+\eq{
+  M_t = \rho_t S l g \cdot \frac{1}{2} l,
+}
+ kde $\rho_t$ je hustota tyče, $S$ je průřez tyče, $l$ její délka. 
+ 
+Dále označme $\alpha$ tu část tyče, která je nad hladinou vody (tj. pod hladinou je $(1-\alpha) l$ metrů tyče). Působište vztlakové síly je v polovině ponořené časti, tedy:
+ \eq{
+  M_v = \rho_v S (1-\alpha) l g \cdot \left(\alpha + \frac{1}{2} (1-\alpha) \right) l = \frac{1}{2} \rho_v S g l^2 (1-\alpha^2),
+}
+kde jsme využili vzorce $(1-\alpha)(1+\alpha)=(1-\alpha^2)$.
+Tyto momenty míří opačnými směry a soustava je v rovnováze, proto platí $M_t=M_v$ a také po vykrácení shodných veličin:
+ \eq{
+  \rho_t = \rho_v (1-\alpha^2),
+}
+což po dosazení za $"\rho_v=1000 kg/m^3"$ a $"\rho_t=750 kg/m^3"$ dává:
+ \eq{
+  \alpha = \sqrt{1-\frac{3}{4}}.
+}
+Tato rovnice má jediné fyzikální řešení $"\alpha=\frac{1}{2}"$, což je shodně část tyče pod i nad vodou a tedy kýžený výsledek. Pozorný čtenář si jistě všiml, že při počítaní momentů jsme zapomněli uvažovat úhel mezi směry sil a jejich rameny, což však správnosti výsledku nikterak neublížilo (proč? :)) Navíc jsme se vyhli počítaní kvadratické rovnice vhodnou volbou značení neznámé ponořené části.
 }%
 \opt{lngsk}{% riešenie SK
 }}%
